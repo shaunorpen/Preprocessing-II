@@ -187,6 +187,7 @@ img {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: bold;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -201,7 +202,7 @@ img {
 }
 .home .mainHeader {
   margin-top: 20px;
-  border-bottom: 1px dashed grey;
+  border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 10px;
 }
 .home .content-section {
@@ -251,11 +252,11 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  background-color: grey;
+  background-color: #17A2B8;
   color: white;
   font-size: 1.8rem;
-  width: 82%;
-  padding: 13px;
+  width: 83%;
+  padding: 14px;
   text-align: center;
   border-radius: 15px;
 }
