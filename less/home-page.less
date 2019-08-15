@@ -1,5 +1,11 @@
 .home {
 
+  @media @tablet {
+    &.container {
+      padding: 0em 2em;
+    }
+  }
+  
   @media @mobile {
     &.container {
       padding: 0em 1.5em 0em 2.5em;
@@ -29,6 +35,12 @@
 
       img {
         border-radius: 10px;
+      }
+    }
+
+    @media @tablet {
+      .img-content {
+        align-self: center;
       }
     }
 

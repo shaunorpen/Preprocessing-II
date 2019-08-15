@@ -1,3 +1,28 @@
+.face:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,6 +202,16 @@ img {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 18px 0px 0px 18px;
+  }
+  .navbar h1 {
+    font-size: 5em;
+    margin-bottom: 15px;
+  }
+}
 @media (max-width: 500px) {
   .navbar {
     flex-direction: column;
@@ -192,6 +227,12 @@ img {
   display: flex;
   justify-content: space-between;
   padding-right: 30px;
+}
+@media (max-width: 900px) {
+  .navbar nav {
+    width: 400px;
+    padding-bottom: 9px;
+  }
 }
 @media (max-width: 500px) {
   .navbar nav {
@@ -215,6 +256,11 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 900px) {
+  .home.container {
+    padding: 0em 2em;
+  }
 }
 @media (max-width: 500px) {
   .home.container {
@@ -242,6 +288,11 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 900px) {
+  .home .content-section .img-content {
+    align-self: center;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section {
