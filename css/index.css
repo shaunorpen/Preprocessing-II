@@ -170,7 +170,7 @@ img {
 }
 .navbar {
   margin: 0 auto;
-  width: 79%;
+  max-width: 1012px;
   padding: 24px 100px;
   display: flex;
   justify-content: space-between;
