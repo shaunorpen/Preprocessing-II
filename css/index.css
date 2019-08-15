@@ -177,11 +177,27 @@ img {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    padding: 18px 0px 0px 18px;
+  }
+  .navbar h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+}
 .navbar nav {
   width: 40%;
   display: flex;
   justify-content: space-between;
   padding-right: 30px;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    width: 400px;
+    padding-bottom: 9px;
+  }
 }
 .navbar nav a {
   text-decoration: none;
@@ -199,6 +215,11 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home.container {
+    padding: 0em 1.2em 0em 2.5e;
+  }
 }
 .home .mainHeader {
   margin-top: 20px;

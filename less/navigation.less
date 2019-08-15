@@ -8,12 +8,27 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px dashed #C0C0C0;
+    
+    @media @mobile {
+        flex-direction: column;
+        padding: 18px 0px 0px 18px;
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+    }
 
     nav {
         width: 40%;
         display: flex;
         justify-content: space-between;
         padding-right: 30px;
+
+        @media @mobile {
+            width: 400px;
+            padding-bottom: 9px;
+        }
         
         a {
             text-decoration: none;
